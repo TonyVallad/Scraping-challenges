@@ -117,3 +117,32 @@ Here's how we approached the solution:
    - Once the loop ended, we printed the total number of pages. For better readability in the terminal, the output was displayed in **green text** using ANSI escape codes.
 
 This solution efficiently navigates through the website's paginated structure to find the total number of pages.
+
+## Challenge 4: Determine the Total Number of Quotes on the Infinite Scroll Page
+
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_4.png?raw=true" width="750"/>
+
+**Objective:** Find the total number of quotes on the infinite scroll page of the [Quotes to Scrape](http://quotes.toscrape.com/scroll) website.
+
+**Solution:**
+The challenge here is that the website uses **infinite scrolling** to load new quotes dynamically as the user scrolls down. This means we can't just scrape all the content at once; instead, we need to continuously scroll down the page until all the quotes have been loaded.
+
+To solve this, we used **Selenium** to simulate user interaction with the page, specifically scrolling down, and dynamically capturing all the quotes. Here’s the approach:
+
+1. **Load the Infinite Scroll Page**:
+   - We use **Selenium** to load the infinite scroll page of the website.
+
+2. **Simulate Scrolling**:
+   - Selenium executes a JavaScript command to scroll down the page repeatedly. After each scroll, we wait for the page to load more content before continuing.
+
+3. **Capture and Count Quotes**:
+   - After every scroll, we use Selenium to find and count all elements with the class `quote`, which represents each individual quote.
+
+4. **Detect End of Scrolling**:
+   - The script checks the height of the page (`document.body.scrollHeight`). When this height stops increasing after scrolling, we know we've reached the bottom, meaning no more quotes are being loaded.
+
+5. **Output**:
+   - The total number of quotes is printed to the terminal in **green text** for better readability.
+
+This approach allows us to accurately scrape and count all quotes from an infinite scroll page.
+

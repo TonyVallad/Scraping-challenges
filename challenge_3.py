@@ -28,15 +28,9 @@ def get_total_pages():
         else:
             # No "Next" button means we've reached the last page
             break
-
-    # Added line for better readability
-    print()
-
+        
     # Print the total number of pages
-    print(f'\033[1;32mTotal number of pages:\033[0m {total_pages}') # With green text for better readability
-
-    # Added line for better readability
-    print()
+    print(f'\n\033[1;32mTotal number of pages:\033[0m {total_pages}\n') # With green text for better readability
 
 if __name__ == "__main__":
     get_total_pages()
