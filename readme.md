@@ -93,6 +93,27 @@ In this challenge, we used the **Selenium WebDriver** library to automate the lo
 
 This solution provides a simple and efficient way to log into the site using valid credentials with Selenium WebDriver.
 
----
+## Challenge 3: Determine the Total Number of Pages
 
-Feel free to copy this into your `README.md` file. If you need any adjustments or further explanations, let me know!
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_3.png?raw=true" width="750"/>
+
+**Objective:** Find the total number of pages available on the [Quotes to Scrape](http://quotes.toscrape.com/) website.
+
+**Solution:**
+In this challenge, we used **BeautifulSoup** to scrape the website and determine the total number of pages. The website uses pagination to navigate between multiple pages of quotes, with a "Next" button indicating the presence of additional pages.
+
+Here's how we approached the solution:
+
+1. **Start at the First Page**:
+   - We began by sending a GET request to the homepage (`http://quotes.toscrape.com/`) and parsed the HTML using BeautifulSoup.
+
+2. **Identify and Follow the "Next" Button**:
+   - We searched for the "Next" button in the page's pagination section. If it was found, we extracted the URL for the next page from the button's `href` attribute and updated our current URL.
+
+3. **Count the Pages**:
+   - Each time we found a "Next" button, we incremented the page counter. This process continued until the "Next" button was no longer present, indicating the last page.
+
+4. **Final Output**:
+   - Once the loop ended, we printed the total number of pages. For better readability in the terminal, the output was displayed in **green text** using ANSI escape codes.
+
+This solution efficiently navigates through the website's paginated structure to find the total number of pages.
