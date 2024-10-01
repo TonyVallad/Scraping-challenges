@@ -34,7 +34,7 @@ This repository contains solutions to various web scraping challenges using Pyth
 
 ## Challenge 1: Scraping Books and Average Prices
 
-<img src="https://raw.githubusercontent.com/TonyVallad/Scraping/refs/heads/main/Script_screenshot.png" width="750"/>
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_1.png?raw=true" width="750"/>
 
 In the first challenge, we scrape the [Books to Scrape](https://books.toscrape.com/) website to gather information about the number of books and their average prices in each category.
 
