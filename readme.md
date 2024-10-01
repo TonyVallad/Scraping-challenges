@@ -171,3 +171,33 @@ Here’s a summary of how we solved the problem:
 
 By using **Selenium**, we were able to interact with a JavaScript-heavy webpage and successfully scrape the first quote. This approach can be used for other pages that load content dynamically through JavaScript.
 
+Here's the **Challenge 6** section for your `README.md` file:
+
+## Challenge 6: Get the Fifth Quote from a Delayed JavaScript-Rendered Page
+
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_6.png?raw=true" width="750"/>
+
+**Objective:** Scrape the fifth quote from [page 5](http://quotes.toscrape.com/js-delayed/page/5/) of a JavaScript-rendered website where the quotes appear after a delay of approximately 10-12 seconds.
+
+**Solution:**
+In this challenge, the quotes on page 5 are loaded dynamically with a delay of around 10 to 12 seconds after the page initially loads. To handle this, we used **Selenium** to open the page, wait for the quotes to appear, and then extract the fifth quote.
+
+**Approach:**
+1. **Using Selenium to Load the Delayed Page**:
+   - We used **Selenium** to open the URL since it can handle JavaScript and delays, unlike static web scrapers like `requests`.
+
+2. **Handling the Delay**:
+   - Since the quotes take around 10-12 seconds to appear, we introduced a wait time of 12 seconds (`time.sleep(12)`) to ensure the quotes are fully loaded before attempting to scrape them.
+
+3. **Extracting the Fifth Quote**:
+   - After waiting for the quotes to load, we used the `find_elements` method to collect all the quotes on the page.
+   - We then checked if there are at least 5 quotes available and extracted the fifth one.
+
+4. **Displaying the Quote**:
+   - The fifth quote and its author were printed to the terminal in **cyan text** for improved readability.
+
+**Code Summary**:
+- **Selenium** was crucial in automating the browser and handling the delay caused by JavaScript rendering.
+- The wait time was adjusted to 12 seconds to ensure the quotes had enough time to appear on the page.
+- The quote and author information were scraped and displayed once the fifth quote was found.
+
