@@ -62,3 +62,37 @@ for category_name, category_url in categories.items():
 ```
 
 This approach efficiently gathers and displays the necessary information without excessive requests to the server.
+
+## Challenge 2: Logging into a Website
+
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_2.png?raw=true" width="750"/>
+
+**Objective:** Log into the website [Quotes to Scrape](http://quotes.toscrape.com/login) using Selenium.
+
+**Solution:**
+In this challenge, we used the **Selenium WebDriver** library to automate the login process. Here's the breakdown of the solution:
+
+1. **Setup Selenium with GeckoDriver**: 
+   - We initialized the **Firefox** WebDriver by specifying the path to `geckodriver.exe` using the `Service` class from Selenium.
+   
+2. **Navigating to the Login Page**:
+   - Using Selenium's `get` method, we navigated to the login page (`http://quotes.toscrape.com/login`).
+
+3. **Filling in the Login Form**:
+   - We located the username and password input fields on the page using the `find_element` method with the `By.NAME` selector.
+   - We then filled in the fields with the provided username and password using the `send_keys` method.
+
+4. **Submitting the Form**:
+   - The form was submitted by sending the `Keys.RETURN` action to the password field.
+
+5. **Checking Login Success**:
+   - We verified the login success by checking if the page source contained the word "Logout". If "Logout" was found, it confirmed that the login was successful; otherwise, the credentials were incorrect.
+
+6. **Closing the WebDriver**:
+   - After the process, the WebDriver was closed using the `quit` method to free up resources.
+
+This solution provides a simple and efficient way to log into the site using valid credentials with Selenium WebDriver.
+
+---
+
+Feel free to copy this into your `README.md` file. If you need any adjustments or further explanations, let me know!
