@@ -27,7 +27,7 @@ This repository contains solutions to various web scraping challenges using Pyth
    - [Tableful Quotes](http://quotes.toscrape.com/tableful/)
 
 8. **What is the unique quote from Albert Einstein about music via this form?**
-   - [Filter Page](http://quotes.toscrape.com/filter.aspx)
+   - [Search Page](https://quotes.toscrape.com/search.aspx)
 
 9. **How long will it take you to scrape all the content from this website?**
    - [Random Quote Page](http://quotes.toscrape.com/random)
