@@ -83,9 +83,9 @@ def scrape_category_data():
             average_price = 0.0
         
         # Display results immediately after scraping each category
-        print(f"Category: {category_name}")
-        print(f"  Total Books: {total_books}")
-        print(f"  Average Price: £{average_price:.2f}")
+        print(f"\033[1;32m{category_name}\033[0m")  # Category name in green
+        print(f"- Total Books: {total_books}")
+        print(f"- Average Price: £{average_price:.2f}")
 
 if __name__ == "__main__":
     # Scrape the category data and show the result for each category as soon as it's done
