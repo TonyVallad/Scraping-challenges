@@ -146,3 +146,28 @@ To solve this, we used **Selenium** to simulate user interaction with the page, 
 
 This approach allows us to accurately scrape and count all quotes from an infinite scroll page.
 
+## Challenge 5: Get the First Quote from Page 10 of a JavaScript-Generated Page
+
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_5.png?raw=true" width="750"/>
+
+**Objective:** Scrape the first quote from [page 10](http://quotes.toscrape.com/js/page/10/) of the JavaScript-rendered "Quotes to Scrape" website.
+
+**Solution:**
+In this challenge, the quotes are dynamically loaded through **JavaScript**, so using traditional scraping methods like `requests` and `BeautifulSoup` won't work as they only retrieve the static HTML. To solve this, we rely on **Selenium** to interact with the webpage, allowing it to fully render and load the quotes before scraping.
+
+Here’s a summary of how we solved the problem:
+
+1. **Using Selenium to Load the Page**:
+   - Since the content is loaded dynamically via JavaScript, we used **Selenium** to open the page and wait for the content to load.
+
+2. **Waiting for Quotes to Load**:
+   - We introduced a slight delay (`time.sleep(2)`) to ensure that the quotes have enough time to fully render.
+
+3. **Extracting the First Quote**:
+   - Once the page is loaded, we located the first quote element using its class `quote`. From this element, we extracted the quote text and the author’s name.
+
+4. **Displaying the Quote**:
+   - We printed the first quote and its author in **cyan text** for readability in the terminal.
+
+By using **Selenium**, we were able to interact with a JavaScript-heavy webpage and successfully scrape the first quote. This approach can be used for other pages that load content dynamically through JavaScript.
+
