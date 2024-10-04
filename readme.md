@@ -201,3 +201,14 @@ In this challenge, the quotes on page 5 are loaded dynamically with a delay of a
 - The wait time was adjusted to 12 seconds to ensure the quotes had enough time to appear on the page.
 - The quote and author information were scraped and displayed once the fifth quote was found.
 
+### Challenge 7: Find the Most Repetitive Quote Tag
+
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_7.png?raw=true" width="850"/>
+
+**Objective**: The goal of this challenge is to identify the most frequently occurring quote tag on a specified webpage, highlighting common themes found in the quotes.
+
+**Solution**: This script leverages Selenium to scrape the webpage, extract the tags associated with quotes, and count their occurrences to determine the most common tag.
+
+**Approach**: The script starts by initializing a Firefox WebDriver to navigate to the target URL. It waits briefly for the page to fully load before locating the `<td>` element containing the tags. It retrieves all the tags from the associated `<a>` elements and stores them in a dictionary to count each tag's frequency.
+
+**Script Summary**: After counting the occurrences of each tag, the script identifies the most common one using the `max()` function on the dictionary. Finally, it outputs the most frequently occurring tag along with its occurrence count, providing insights into the repetitive themes in the quotes on the page.
