@@ -34,7 +34,7 @@ This repository contains solutions to various web scraping challenges using Pyth
 
 ## Challenge 1: Scraping Books and Average Prices
 
-<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_1.png?raw=true" width="750"/>
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_1.png?raw=true" width="850"/>
 
 In the first challenge, we scrape the [Books to Scrape](https://books.toscrape.com/) website to gather information about the number of books and their average prices in each category.
 
@@ -65,7 +65,7 @@ This approach efficiently gathers and displays the necessary information without
 
 ## Challenge 2: Logging into a Website
 
-<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_2.png?raw=true" width="750"/>
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_2.png?raw=true" width="850"/>
 
 **Objective:** Log into the website [Quotes to Scrape](http://quotes.toscrape.com/login) using Selenium.
 
@@ -95,7 +95,7 @@ This solution provides a simple and efficient way to log into the site using val
 
 ## Challenge 3: Determine the Total Number of Pages
 
-<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_3.png?raw=true" width="750"/>
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_3.png?raw=true" width="850"/>
 
 **Objective:** Find the total number of pages available on the [Quotes to Scrape](http://quotes.toscrape.com/) website.
 
@@ -120,7 +120,7 @@ This solution efficiently navigates through the website's paginated structure to
 
 ## Challenge 4: Determine the Total Number of Quotes on the Infinite Scroll Page
 
-<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_4.png?raw=true" width="750"/>
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_4.png?raw=true" width="850"/>
 
 **Objective:** Find the total number of quotes on the infinite scroll page of the [Quotes to Scrape](http://quotes.toscrape.com/scroll) website.
 
@@ -148,7 +148,7 @@ This approach allows us to accurately scrape and count all quotes from an infini
 
 ## Challenge 5: Get the First Quote from Page 10 of a JavaScript-Generated Page
 
-<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_5.png?raw=true" width="750"/>
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_5.png?raw=true" width="850"/>
 
 **Objective:** Scrape the first quote from [page 10](http://quotes.toscrape.com/js/page/10/) of the JavaScript-rendered "Quotes to Scrape" website.
 
@@ -175,7 +175,7 @@ Here's the **Challenge 6** section for your `README.md` file:
 
 ## Challenge 6: Get the Fifth Quote from a Delayed JavaScript-Rendered Page
 
-<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_6.png?raw=true" width="750"/>
+<img src="https://github.com/TonyVallad/Scraping-challenges/blob/main/challenge_6.png?raw=true" width="850"/>
 
 **Objective:** Scrape the fifth quote from [page 5](http://quotes.toscrape.com/js-delayed/page/5/) of a JavaScript-rendered website where the quotes appear after a delay of approximately 10-12 seconds.
 
